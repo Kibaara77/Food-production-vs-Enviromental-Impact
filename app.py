@@ -36,7 +36,7 @@ try:
     food_list = data['Food_Product'].unique().tolist()
     
 except FileNotFoundError:
-    st.error(f"Error: Model file '{MODEL_FILE_NAME}' not found. Please check the file path.")
+    st.error(f"Error: Model file '{EnvImpact.joblib}' not found. Please check the file path.")
     st.stop()
 except Exception as e:
     st.error(f"An error occurred during setup: {e}")
